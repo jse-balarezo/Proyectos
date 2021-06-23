@@ -10,8 +10,8 @@ namespace Identificación_Pais
         {
             Pais pais1 = new Pais
             {
-                Nombre = "Ecuador",
-                PaisId = 1
+                PaisId = 1,
+                Nombre = "Ecuador"
             };
 
             pais1.Provincias = new List<Provincia>();
@@ -23,19 +23,23 @@ namespace Identificación_Pais
                     provincia1,
                     provincia2
                 };
+
             var canton1 = new Canton();
             canton1.Nombre = "Mejia";
             var canton2 = new Canton();
             canton2.Nombre = "Cayambe";
+
             provincia2.Cantones = new List<Canton>();
             provincia2.Cantones.Add(canton1);
             provincia2.Cantones.Add(canton2);
+
             var parroquia1 = new Parroquia();
             parroquia1.Nombre = "San Sebastian";
             var parroquia2 = new Parroquia();
             parroquia2.Nombre = "Gonzales Suarez";
             parroquia1.Habitantes = 20200;
             parroquia2.Habitantes = 15300;
+
             canton1.Parroquias = new List<Parroquia>();
             canton1.Parroquias.Add(parroquia1);
             canton1.Parroquias.Add(parroquia2);
