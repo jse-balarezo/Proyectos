@@ -49,7 +49,7 @@ namespace TareaArboles
                         Valor="+",
                         Hijos={
                             new Nodo{
-                                Valor="3"
+                                Valor="10"
                             },
                             new Nodo{
                                 Valor="4"
@@ -64,9 +64,11 @@ namespace TareaArboles
             };
 
             ExaminarArbol ExaminarArbol = new ExaminarArbol();
+            Console.WriteLine($"El Arbol Tiene : {ExaminarArbol.ContarLasHojas(raiz)} Hojas");
+            Console.WriteLine($"El Arbol Tiene : {ExaminarArbol.ContarLosNiveles(raiz)} Niveles");
+            Console.WriteLine($"El Arbol Tiene : {ExaminarArbol.ContarLosNodos(raiz)} Nodos");
 
 
         }
     }
 }
-
